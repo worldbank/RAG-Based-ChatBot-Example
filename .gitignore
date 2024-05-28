@@ -1,0 +1,8 @@
+.streamlit-venv/
+__pycache__/
+.DS_Store
+.streamlit/
+.env
+.idea/
+.python-version
+store/
