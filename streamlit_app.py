@@ -6,8 +6,8 @@ from ensemble import ensemble_retriever_from_docs
 from full_chain import create_full_chain, ask_question
 from local_loader import load_txt_files, load_pdf_files
 
-st.set_page_config(page_title="LangChain & Streamlit RAG")
-st.title("LangChain & Streamlit RAG")
+st.set_page_config(page_title="Disease Outbreak News Chatbot")
+st.title("Disease Outbreak News Chatbot")
 
 
 def show_ui(qa, prompt_to_user="How may I help you?"):
@@ -87,7 +87,7 @@ def run():
 
     if ready:
         chain = get_chain(openai_api_key=openai_api_key, huggingfacehub_api_token=huggingfacehub_api_token)
-        st.subheader("Ask me questions about health emergencies as reported by WHO")
+        st.subheader("Ask me questions about disease outbreaks across the world")
         show_ui(chain, "What would you like to know?")
     else:
         st.stop()

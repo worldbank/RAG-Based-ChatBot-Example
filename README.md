@@ -1,8 +1,10 @@
 
-# Data in Health AI Course
+# Data in Health Gen AI and LLM Course
 
-## LangChain RAG Based Chatbot Example
-In this example, we develp a Chatbot which incorporates custom documents to provide up to date answers based on those documents.
+## The Disease Outbreak News Chatbot 
+In this example, we apply the knowledge we learned in the LangChain tutorial to develop a RAG based Chatbot which utilises documents from [WHO disease outbreak news](https://www.who.int/emergencies/disease-outbreak-news) to answer questions about latest disease outbreaks across the globe. 
+
+The [Chatbot](https://rag-based-chatbot-example-yna7jakpgnmcobwmjdvruv.streamlit.app) is live on Streamlit community cloud. In order to try it, you need to have [OpenAI API key](https://openai.com/index/openai-api/) and [Hugging Face API token](https://huggingface.co) develp a Chatbot which incorporates custom documents to provide up to date answers based on those documents.
 
 ## Project Setup 
 The repository contains the following key directories.
@@ -132,4 +134,4 @@ This app was adapted from the [Streamlit example app](https://github.com/streaml
 ## Misc Notes
 
 - There is an issue with newer langchain package versions and streamlit chat history, see https://github.com/langchain-ai/langchain/pull/18834
-  - This one reason why a number of dependencies are pinned to specific values.
+- This one reason why a number of dependencies are pinned to specific values.
